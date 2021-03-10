@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:weight_track_flutter/widgets/data/data.dart';
 import 'package:weight_track_flutter/widgets/data/new_data.dart';
 
-class ChatScreen extends StatelessWidget {
+class DataScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

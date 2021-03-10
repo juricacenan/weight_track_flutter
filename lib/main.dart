@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weight_track_flutter/screens/auth_screen.dart';
-import 'package:weight_track_flutter/screens/weight_screen.dart';
+import 'package:weight_track_flutter/screens/data_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         stream: FirebaseAuth.instance.onAuthStateChanged,
         builder: (ctx, userSnapshot) {
           if (userSnapshot.hasData) {
-            return ChatScreen();
+            return DataScreen();
           }
           return AuthScreen();
         },
